@@ -1,6 +1,6 @@
 class firewalld {
     package { 'firewalld':
-        ensure => latest,
+        ensure => installed,
     }
     service { 'firewalld':
         enable => true,
